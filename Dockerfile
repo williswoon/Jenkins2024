@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/windows/servercore
-RUN net user Michael P@ssw0rd /ADD
-COPY . /
-RUN msiexec /quiet /i sample.msi ACCOUNT=%COMPUTERNAME%\Michael PASSWORD=P@ssw0rd
+FROM microsoft/aspnetWORKDIR C:\\InstallersCOPY EKBCS.exe 
+C:\\Installers\\myinstaller.exeCOPY EKBCS.properties
+C:\\Installers\\myinstaller.properties#RUN msiexec /unreg#RUN msiexec /regserver#RUN 
+["net start", "msiserver"]RUN ["myinstaller.exe", "/l*v myinstaller.log",  "/qn PROPERTYFILE=myinstaller.properties"]ENTRYPOINT ["powershell"]
